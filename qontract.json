@@ -1,0 +1,11 @@
+{
+  "sources": [
+    {
+      "provider": "git",
+      "repository": "https://github.com/qontract/petstore-contracts.git",
+      "stub": [
+        "run/qontract/examples/petstore-soap/api_1.qontract"
+      ]
+    }
+  ]
+}
