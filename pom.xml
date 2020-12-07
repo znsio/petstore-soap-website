@@ -17,7 +17,7 @@
     <properties>
         <java.version>1.8</java.version>
         <kotlin.version>1.4.10</kotlin.version>
-        <qontract.version>0.19.1</qontract.version>
+        <qontract.version>0.20.1</qontract.version>
     </properties>
 
     <dependencies>
