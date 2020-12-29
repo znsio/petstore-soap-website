@@ -2,7 +2,7 @@
   "sources": [
     {
       "provider": "git",
-      "repository": "https://github.com/qontract/petstore-contracts.git",
+      "repository": "https://github.com/znsio/petstore-contracts.git",
       "stub": [
         "run/qontract/examples/petstore-soap/api_1.qontract"
       ]
