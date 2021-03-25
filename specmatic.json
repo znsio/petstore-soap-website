@@ -4,7 +4,7 @@
       "provider": "git",
       "repository": "https://github.com/znsio/petstore-contracts.git",
       "stub": [
-        "run/qontract/examples/petstore-soap/api_1.qontract"
+        "in/specmatic/examples/petstore-soap/api_petstore_v1.spec"
       ]
     }
   ]

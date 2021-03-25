@@ -1,5 +1,7 @@
 package run.qontract.example.client;
 
+import in.specmatic.LogTail;
+import in.specmatic.stub.HttpStub;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
@@ -9,16 +11,11 @@ import org.springframework.boot.web.server.LocalServerPort;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
-import run.qontract.LogTail;
-import run.qontract.petstore.client.AddPetRequest;
-import run.qontract.petstore.client.AddPetResponse;
-import run.qontract.stub.HttpStub;
 
 import java.net.URI;
-import java.util.List;
 
+import static in.specmatic.stub.API.createStub;
 import static org.assertj.core.api.Assertions.assertThat;
-import static run.qontract.stub.API.createStub;
 
 @SpringBootTest(classes = { PetstoreClientApplication.class}, webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
 class PetStoreClientEndpointTest {

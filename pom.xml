@@ -16,11 +16,18 @@
 
     <properties>
         <java.version>1.8</java.version>
-        <kotlin.version>1.4.21-2</kotlin.version>
-        <qontract.version>0.22.0</qontract.version>
+        <kotlin.version>1.4.31</kotlin.version>
+        <specmatic.version>0.24.2</specmatic.version>
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>in.specmatic</groupId>
+            <artifactId>specmatic-core</artifactId>
+            <version>${specmatic.version}</version>
+            <scope>test</scope>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
@@ -56,33 +63,8 @@
                 </exclusion>
             </exclusions>
         </dependency>
-
-        <dependency>
-            <groupId>run.qontract</groupId>
-            <artifactId>qontract-core</artifactId>
-            <version>${qontract.version}</version>
-            <scope>test</scope>
-        </dependency>
     </dependencies>
 
-    <!-- required for Java 11 -->
-    <!--
-    <profiles>
-        <profile>
-            <id>java11</id>
-            <activation>
-                <jdk>[11,)</jdk>
-            </activation>
-
-            <dependencies>
-                <dependency>
-                    <groupId>org.glassfish.jaxb</groupId>
-                    <artifactId>jaxb-runtime</artifactId>
-                </dependency>
-            </dependencies>
-        </profile>
-    </profiles>
-    -->
     <build>
         <plugins>
             <plugin>
